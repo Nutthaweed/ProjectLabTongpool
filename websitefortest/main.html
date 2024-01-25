@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-btn"></i>
+            <span class="namelogo">Nutthawit</span>
+        </div>
+        
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-btn"></i>
+                <span class="namelogo">Nutthawit</span>
+            </div>
+
+
+               <div class="content">
+                <ul>
+                    <li>
+                        <a href="#about"><i class='bx bx-male'></i><span class="Link">About me</span></a>
+                    </li>
+                    <li>
+                        <a href="#code"><i class='bx bxs-terminal' ></i><span class="Link">Code</span></a>
+                    </li>
+                    <li>
+                        <a href="#contact"><i class='bx bxs-contact' ></i><span class="Link">Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="Aboutme">
+            <div id="ring"></div>
+            <image src="image/profileimg.jpg">
+            <h1>Hello.I'm Nutthawit</h1>
+            <span>You can call me <strong>To</strong>. I'm 20 years old lazy programmer.</span>
+        </section>
+
+        <section class="firstpage" id="about">
+        <div class="section1" >
+           <div class="text" style="visibility: hidden;" ></div>
+        </div>
+           </div>
+        <div class="section2">
+            <div class="text">My favorite things, Are music,game and code <br>
+           I love to eat buffet,play ping pongs <br>
+            sometime I play ping-pong<br>
+            This is my graduation timeline
+        </div>
+        <div class="History">
+                <div>Pichayasuksa school       <strong>2008-2016</strong></div>
+               <div>Suankularb Witthayalai Nonthaburi School     <strong>2017-2022</strong></dov>
+                <div>Kasetsart University    <strong>2022-2022</strong></div>
+                <div>King Mongkut University of Technology North Bangkok      <strong>2023-now</strong></a></div>
+            </div>
+    </div>
+    <!-- fix the gap of website -->
+    </section>
+  
+    
+
+    
+    <section class="secondpage" id="code">
+        <div >
+          <div>Code That I used</div>
+        <div id="slider">
+        <ul id="slidewrap">
+            <li><img src="image/c.png" ></li>
+            <li><img src="image/javascript.png" "></li>
+            <li><img src="image/python.png"></li>
+            <li><img src="image/java.png"></li>
+            <li><img src="image/react.png"></li>
+        </ul>
+        <a id="prev" style="visibility: hidden;" >&#8810;</a>
+        <a id="next" style="visibility: hidden;">&#8811;</a>
+        </div>
+        </div>
+    
+    </section>
+
+    <section class="thirdpage" id="contact">
+        <div>Contact me 
+        <div></div>Line: totopichayasuksa
+        <div></div>Facebook: To Nutthaweed
+        <div></div> Instagram: @nutthaweed
+    </div>
+    </section>
+
+    </main>
+
+
+
+    <section class="overlay"></section>
+    <script src="sidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+    VANTA.GLOBE({
+  el: "#ring",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xfa0036
+    });
+});
+</script>
+<script src="slider.js"></script>
+</body>
+</html>
